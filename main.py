@@ -16,19 +16,19 @@ thickness = 5
 # Создаем цикл, который будет повторяться 36 раз
 for i in range(36):
 
-    # Выбираем случайный цвет из списка
-    t.color(random.choice(colors))
+    # # Выбираем случайный цвет из списка
+    # t.color(random.choice(colors))
 
-    # Устанавливаем толщину линии
-    t.pensize(thickness)
+    # # Устанавливаем толщину линии
+    # t.pensize(thickness)
 
-    # Рисуем квадрат
-    for j in range(4):
-        t.forward(100)
-        t.right(90)
+    # # Рисуем квадрат
+    # for j in range(4):
+    #     t.forward(100)
+    #     t.right(90)
 
-    # Поворачиваем черепаху на 10 градусов
-    t.right(10)
+    # # Поворачиваем черепаху на 10 градусов
+    # t.right(10)
 
     # Уменьшаем толщину линии на 0.1
     thickness -= 0.1
