@@ -16,19 +16,19 @@ thickness = 5
 # Создаем цикл, который будет повторяться 36 раз
 for i in range(36):
 
-    # Выбираем случайный цвет из списка
-    t.color(random.choice(colors))
+    # # Выбираем случайный цвет из списка
+    # t.color(random.choice(colors))
 
-    # Устанавливаем толщину линии
-    t.pensize(thickness)
+    # # Устанавливаем толщину линии
+    # t.pensize(thickness)
 
-    # Рисуем квадрат
-    for j in range(4):
-        t.forward(100)
-        t.right(90)
+    # # Рисуем квадрат
+    # for j in range(4):
+    #     t.forward(100)
+    #     t.right(90)
 
-    # Поворачиваем черепаху на 10 градусов
-    t.right(10)
+    # # Поворачиваем черепаху на 10 градусов
+    # t.right(10)
 
     # Уменьшаем толщину линии на 0.1
     thickness -= 0.1
@@ -67,13 +67,13 @@ def decrease_thickness():
     t.pensize(thickness) # Устанавливаем новую толщину линии
 
 # Связываем функции с клавишами
-turtle.onkey(go_up, "Up") # При нажатии на клавишу "Вверх" вызываем функцию go_up
-turtle.onkey(go_down, "Down") # При нажатии на клавишу "Вниз" вызываем функцию go_down
-turtle.onkey(go_left, "Left") # При нажатии на клавишу "Влево" вызываем функцию go_left
-turtle.onkey(go_right, "Right") # При нажатии на клавишу "Вправо" вызываем функцию go_right
-turtle.onkey(change_color, "c") # При нажатии на клавишу "c" вызываем функцию change_color
-turtle.onkey(increase_thickness, "+") # При нажатии на клавишу "+" вызываем функцию increase_thickness
-turtle.onkey(decrease_thickness, "-") # При нажатии на клавишу "-" вызываем функцию decrease_thickness
+# turtle.onkey(go_up, "Up") # При нажатии на клавишу "Вверх" вызываем функцию go_up
+# turtle.onkey(go_down, "Down") # При нажатии на клавишу "Вниз" вызываем функцию go_down
+# turtle.onkey(go_left, "Left") # При нажатии на клавишу "Влево" вызываем функцию go_left
+# turtle.onkey(go_right, "Right") # При нажатии на клавишу "Вправо" вызываем функцию go_right
+# turtle.onkey(change_color, "c") # При нажатии на клавишу "c" вызываем функцию change_color
+# turtle.onkey(increase_thickness, "+") # При нажатии на клавишу "+" вызываем функцию increase_thickness
+# turtle.onkey(decrease_thickness, "-") # При нажатии на клавишу "-" вызываем функцию decrease_thickness
 
 # Включаем режим ожидания нажатия клавиш
 turtle.listen()
